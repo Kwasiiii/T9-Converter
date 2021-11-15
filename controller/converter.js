@@ -23,6 +23,7 @@ export const numberToWord = (input) => {
   }
 
   const digits = input.split('').filter(digit => digit > 1)
+  console.log('digits ->', digits)
 
   let result = []
 
@@ -30,17 +31,21 @@ export const numberToWord = (input) => {
     if (i === 0) {
       result.push(keyboard[digit])
     } else {
-      result.forEach((word, i) => {
-        const newWord = []
+      result[0].forEach((word, i) => {
+        console.log('result ->', result)
+        const newWord = []  
+        console.log('keyboard digits values -> ', keyboard[digit])
         keyboard[digit].forEach((letter) => {
           newWord.push(`${word}${letter}`)
+          // console.log(newWord)
         })
         result[i] = newWord
+        
       })
     }
     result = [...result]
   })
-  return result
+  return result || []
 } 
 
 export const getInput = async (req, res) => {
