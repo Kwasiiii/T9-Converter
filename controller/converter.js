@@ -39,13 +39,11 @@ export const numberToWord = (input) => {
           newWord.push(`${word}${letter}`)
           // console.log(newWord)
         })
-        result[i] = newWord
-        
+        result[i] = newWord 
       })
     }
-    result = [...result]
   })
-  return result || []
+  return result = [].concat(...result) || []
 } 
 
 export const getInput = async (req, res) => {

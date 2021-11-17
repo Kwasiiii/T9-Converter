@@ -1,8 +1,32 @@
-// .userInput{
-//   width: 300px;
-//   margin:0 auto;
-// }
-// .simple-keyboard{
-//   max-width: 300px;
-//   margin: 0 auto;
-// }
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.site-wrapper {
+  height: calc(100vh - 179.39px);
+  .top{
+    text-align: center;
+  }
+}
+
+
+.containers{
+  max-width: 300px;
+  margin: 50px auto 0;
+  .display{
+    border: 5px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    input{
+      border: none;
+    }
+  }
+  p{
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    max-width: 300px;
+    word-wrap: break-word;
+    span{
+      margin-right: 10px;
+    }
+  }
+}
