@@ -418,11 +418,6 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-simple-keyboard@^3.3.35:
-  version "3.3.35"
-  resolved "https://registry.yarnpkg.com/react-simple-keyboard/-/react-simple-keyboard-3.3.35.tgz#003e6554c002145e6c369e7f4ad61736b7820bbf"
-  integrity sha512-BbYa2MASxInC5/WdxYlKPSh+PjDP6d0oNEDmxVbtxw7s0zzrVQ9xHRNOOKvPv7Ar2PTUmtur4Q6WbY8ZUFgfCg==
-
 regexp-clone@1.0.0, regexp-clone@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/regexp-clone/-/regexp-clone-1.0.0.tgz"

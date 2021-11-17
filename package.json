@@ -8,8 +8,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^6.0.12",
-    "react-simple-keyboard": "^3.3.35"
+    "mongoose": "^6.0.12"
   },
   "scripts": {
     "serve": "npx nodemon index.js"
