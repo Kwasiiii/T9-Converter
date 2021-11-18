@@ -12,7 +12,7 @@ const T9Converter = () => {
   useEffect(()=> {
     const getData = async() => {
       const { data } = await axios(`/api/${input}`)
-      setResult(data)
+      setResult(data.result)
     }
     getData()
   },[input])
@@ -42,7 +42,7 @@ const T9Converter = () => {
       <div className="containers d-flex flex-column justify-content-center">
         <div className="display d-flex flex-column">
           <input className="userInput" type="number" value={input} onChange={changeInput} placeholder="E.g 23" />
-          {result && <p>{result.result}</p>}
+          {result && <p>{result.join(', ')}</p>}
         </div>
         <Keyboard
           keyboardRef={r => (keyboard.current = r)}
