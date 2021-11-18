@@ -35,7 +35,7 @@ const startServer = async () => {
       return res.status(404).json({ message: 'Path not found' })
     })
 
-    const server = app.listen(process.env.PORT, () => console.log(`🚀 Server is up and running on port: ${process.env.PORT}`))
+    const server = app.listen(process.env.PORT || 4000, () => console.log(`🚀 Server is up and running on port: ${process.env.PORT}`))
     server.timeout = 10000
 
   } catch (err) {
