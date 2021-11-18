@@ -42,7 +42,7 @@ const T9Converter = () => {
       <div className="containers d-flex flex-column justify-content-center">
         <div className="display d-flex flex-column">
           <input className="userInput" type="number" value={input} onChange={changeInput} placeholder="E.g 23" />
-          {result.length > 0 ? <p>{result.result.map((res, i) => {
+          {result.result.length > 0 ? <p>{result.result.map((res, i) => {
             return <span key={i}>{res}</span>
           })}</p> : <p>Result will be shown here!</p>}
         </div>
