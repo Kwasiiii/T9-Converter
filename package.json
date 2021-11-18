@@ -11,9 +11,9 @@
     "mongoose": "^6.0.12"
   },
   "scripts": {
-    "serve": "npx nodemon index.js"
+    "serve": "npx nodemon index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
-  "type": "module",
-  "start": "node index.js",
-  "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  "type": "module"
 }
